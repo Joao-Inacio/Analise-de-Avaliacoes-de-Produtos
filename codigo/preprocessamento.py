@@ -25,3 +25,11 @@ def conexao(bd_nome, collection_nome):
     bd = cliente[bd_nome]
     collection = bd[collection_nome]
     return collection
+
+
+# Função de Criação de arquivo JSON
+def criar_json(dados, arquivo):
+    import json
+    with open(arquivo, 'w', encoding='utf-8') as arquivo_json:
+        json.dump(dados, arquivo_json, ensure_ascii=False, indent=4)
+    print(f"Arquivo {arquivo} criado com sucesso!")
