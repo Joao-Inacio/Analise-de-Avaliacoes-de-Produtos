@@ -9,7 +9,7 @@ def csv_para_json(arquivo):
 
 
 # Função para adicionar dados no MongoDB
-def adicionar_dados(dados, bd_nome, collection_nome):
+def Adicionar_dados(dados, bd_nome, collection_nome):
     from pymongo import MongoClient
     cliente = MongoClient('127.0.0.1:27017')
     bd = cliente[bd_nome]
@@ -19,7 +19,7 @@ def adicionar_dados(dados, bd_nome, collection_nome):
 
 
 # Função de conexão
-def conexao(bd_nome, collection_nome):
+def Conexao(bd_nome, collection_nome):
     from pymongo import MongoClient
     cliente = MongoClient('127.0.0.1:27017')
     bd = cliente[bd_nome]
